@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Alex Silveri">
+    <meta name="description" content="Website created for lab 2 in intro to web development">
+    <title>Cool Title Home</title>
+    <link rel="icon" type="image/png" href="/site/./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/site/./favicon.svg" />
+    <link rel="shortcut icon" href="/site/./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/site/./apple-touch-icon.png" />
+    <link rel="manifest" href="/site/./site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <Div class="width-wrap">
+        <header id="top">
+            <Nav>
+                <ul>
+                    <li><a href=index.html>Home</a></li>
+                    <li><a href=links.html>Links</a></li>
+                    <li><a href=glossary.html>Glossary</a></li>
+                </ul>
+            </Nav>
+        </header>
+        <main>
+           <h1>Survey</h1>
+           <form action="https://formspree.io/f/xzzebegk" 
+                 method="POST"
+           >
+            <div>
+            <label for="name_field">What is your name?</label>
+            <input type="text" id="name field" name="name field" required>
+            </div>
+            <div>
+            <label for="email field">What is your email?</label>
+            <input type="email" id="email field" name="email field" required>
+            </div>
+            <div>
+            <label for="best whole number">Which whole number is best?</label>
+            <input type="number" id="best whole number" name="best whole number" min="1" step="1" required>
+            </div>
+            <div>
+            <label for="best day">Which day is best?</label>
+            <input type="date" id="best day" name="best day">
+            </div>
+            <div>
+            <label for="best bear">Which bear is best?</label>
+            <select id="best bear" name="best bear" required>
+            <option value="">&nbsp;</option>
+            <option value="Black">Black</option>
+            <option value="Brown">Brown</option>
+            <option value="Care">Care</option>
+            <option value="Panda">Panda</option>
+            <option value="Polar">Polar</option>
+            <option value="Teddy">Teddy</option>
+            </select>
+            </div>
+            <div>
+            <fieldset>
+                <legend>Do you like radio buttons?</legend>
+                <ul>
+                    <li>
+                        <label>
+                            <input type="radio" name="enjoys radio buttons" value="yes"> Yes
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="enjoys radio buttons" value="no"> No
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="enjoys radio buttons" value="?" checked> None of your business
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            </div>
+            <div>
+            <label for="life meaning">What is the meaning of life?</label>
+            <textarea id="life meaning" name="life meaning" rows="5" cols="50" placeholder="Enter the correct answer here"></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </main>
+
+        <footer>
+            <hr>
+            <blockquote>
+                "If you do not at first succeed, Give up."
+            </blockquote>
+            <p><cite>--by <span>Unknown</span></cite></p>
+            <p>&copy; 2025 <a href="Mailto:24040448@saultcollege.ca?subject=Message%20from%20CSD112%20Website">Alex
+                    Silveri </a></p>
+            <picture>
+            <source srcset="images/sc-logo.svg" width="70" type= "image/svg+xml">
+            <img src="Images/sc-logo.png"  srcset=" images/sc-logo-1.5x.png 1.5x, images/sc-logo-2x.png 2x" alt="Logo">
+        </picture>
+        </footer>
+
+        <a href=#top>◤Back to Top</a>
+    </Div>
+
+</body>
+
+</html>
