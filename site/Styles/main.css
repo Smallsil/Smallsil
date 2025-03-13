@@ -1,0 +1,150 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #7A8C88;
+    color: #151615; 
+    font-family: Arial, sans-serif;
+}
+
+.width-wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2em 2em;
+    background-color: #ffffff;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 3em;
+}
+
+footer hr {
+    width: 50vw;
+    min-width: 300px;
+    max-width: 890px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border: none;
+    border-bottom: 3px dotted #96007d;
+}
+
+header {
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
+    margin-left: -2em; 
+    margin-right: -2em;
+    padding-bottom: 1em;
+}
+
+header nav {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    margin-left: 2em; 
+    margin-right: 2em; 
+}
+
+nav a {
+    color: #758185;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1em 1em 0.5em 1em;
+    border-top: 4px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+nav a:hover {
+    color: #b8cbd1;
+    border-top: 4px solid #1d6985; 
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav a {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 1em; 
+    padding-bottom: 0.5em; 
+    margin: 0 1em;
+    text-align: center; 
+}
+
+::selection {
+    background-color: #ffeaa7; 
+    color: #151615;
+}
+
+dt::after {
+    content: ":";
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2em;
+}
+
+th, td {
+    padding: 0.3em 1em;
+}
+
+thead th, tfoot th {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #151615;
+}
+
+tbody td {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+tbody tr:nth-child(even) td {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+table, th, td {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    display: inline-block;
+}
+
+form label[for="radio"],
+form label[for="checkbox"] {
+    display: inline-block;
+}
+
+form input[type="submit"] {
+    border: none;
+    padding: 1em 3em;
+    background-color: #1d6985;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #145d73;
+}
+
+form input:invalid {
+    background-color: #c5bdbd;
+}
+
