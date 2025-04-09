@@ -14,24 +14,42 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/site/./apple-touch-icon.png">
     <link rel="manifest" href="/site/./site.webmanifest">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="Styles/normalize.css">
     <link rel="stylesheet" href="Styles/main.css">
+    <style>
+    ul {
+        padding: 0; 
+        margin: 0;
+    }
+    main ul li {
+        padding-left: 1em;
+        list-style-type: none;
+        background-image: url('Images/link.png');
+        background-size: 10px 10px;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+    </style>
 </head>
 
 <body>
-    <Div class="width-wrap">
+    <div class="width-wrap">
         <header id="top">
-            <Nav>
+            <nav>
                 <ul>
-                    <li><a href=index.html>Home</a></li>
-                    <li><a href=links.html>Links</a></li>
-                    <li><a href=glossary.html>Glossary</a></li>
-                    <li><a href=survey.html>Survey</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lorem.html">Lorem Ipsum</a></li>
+                    <li><a href="links.html">Links</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                    <li><a href="survey.html">Survey</a></li>
                 </ul>
-            </Nav>
+            </nav>
         </header>
+        
         <main>
             <h1>Useful Links</h1>
             <ul>
@@ -39,20 +57,18 @@
                 <li><a href="https://realfavicongenerator.net/">Favicon Generator</a></li>
             </ul>
         </main>
-
+    </div>
+    
         <footer>
-            <hr>
-            <blockquote>
+        <hr>
+        <blockquote>
                 "If you do not at first succeed, Give up."
-            </blockquote>
+        </blockquote>
             <p><cite>--by <span>Unknown</span></cite></p>
-            <p>&copy; 2025 <a href="Mailto:24040448@saultcollege.ca?subject=Message%20from%20CSD112%20Website">Alex
-                    Silveri </a></p>
-
+            <p>&copy; 2025 <a href="mailto:24040448@saultcollege.ca?subject=Message%20from%20CSD112%20Website">Alex Silveri</a></p>
         </footer>
-        <a href=#top>◤Back to Top</a>
-    </Div>
-
-</body>
-
+    
+        <a href="#top">◤Back to Top</a>
+    
+    </body>
 </html>

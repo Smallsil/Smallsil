@@ -13,7 +13,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/site/apple-touch-icon.png">
     <link rel="manifest" href="/site/site.webmanifest">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="Styles/normalize.css">
     <link rel="stylesheet" href="Styles/main.css">
 </head>
@@ -24,6 +27,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="lorem.html">Lorem Ipsum</a></li>
                     <li><a href="links.html">Links</a></li>
                     <li><a href="glossary.html">Glossary</a></li>
                     <li><a href="survey.html">Survey</a></li>
@@ -32,16 +36,17 @@
         </header>
         <main>
             <h1>Welcome to Alex Silveri's Website</h1>
-            <a href="Images/Me.jpeg">
-                <picture>
-                    <source srcset="Images/Me150.jpeg" media="(max-width: 500px)">
-                    <source srcset="Images/Me300.jpeg" media="(min-width: 501px)">
-                    <img src="Images/Me300.jpeg" alt="A Photo Of Me">
-                </picture>
-            </a>
-            <p>I like video games and anime</p>
-            <p>I used to play soccer, but have not for a little while due to medical reasons</p>
-            <table>
+            <div class="bio">
+                <a href="Images/Me.jpeg">
+                    <picture>
+                        <source srcset="Images/Me150.jpeg" media="(max-width: 500px)">
+                        <source srcset="Images/Me300.jpeg" media="(min-width: 501px)">
+                        <img class="my-photo" src="Images/Me300.jpeg" alt="A Photo Of Me">
+                    </picture>
+                </a>
+                <p>I like video games and anime</p>
+                <p>I used to play soccer, but have not for a little while due to medical reasons</p>
+                <table>
                 <caption>Table 1. Current Courses</caption>
                 <thead>
                     <tr>
@@ -119,6 +124,7 @@
                     </tr>
                 </tfoot>
             </table>
+        </div>
             <h2>My Favourite Things</h2>
             <figure>
                 <a href="https://www.fcbarcelona.com/en/">
