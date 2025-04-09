@@ -64,19 +64,27 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex; 
-}
-
-header nav ul li {
-    display: inline-block;
+    justify-content: center;
 }
 
 header nav a {
-    display: inline-block;
-    vertical-align: top;
-    padding-top: 1em; 
-    padding-bottom: 0.5em; 
+    padding-top: 1em;
+    padding-bottom: 0.5em;
     margin: 0 1em;
-    text-align: center; 
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+header nav a {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: none;
 }
 
 ::selection {
@@ -186,16 +194,6 @@ form ul {
     padding: 0;
 } 
 
-header nav a {
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-decoration: none;
-}
-
-header nav a:hover {
-    text-decoration: none;
-}
 
 h1 {
     font-weight: 700;
@@ -258,4 +256,94 @@ a[href="#top"] {
 
 a[href="#top"]:hover {
     text-decoration: none;
+}
+
+.favourites input[type="radio"] {
+    display: none;
+}
+
+.favourites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.favourites label {
+    order: -1;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-bottom: 3px solid transparent;
+    display: inline-block;
+}
+
+.favourites input[type="radio"]:checked + label {
+    background-color: #ddd;
+    color: purple;
+    border-bottom: 3px solid purple;
+}
+
+.favourites div {
+    display: none;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.favourites input[type="radio"]:checked + label + div {
+    display: block;
+}
+
+.favourites h3 {
+    font-family: 'Roboto Serif', serif;
+}
+
+@media screen and (max-width: 600px) {
+    .favourites {
+        flex-direction: column;
+    }
+
+    .favourites label {
+        width: 100%;
+        text-align: center;
+    }
+
+    .favourites div {
+        width: 100%;
+    }
+}
+
+
+.bio a {
+    display: block;
+    position: relative;
+}
+
+.paperclip {
+    background: none;
+    box-shadow: none;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+a[href="#top"] {
+    position: sticky;    
+    bottom: 10px;            
+    margin-left: -25px;      
+    display: inline-block;   
+    transition: transform 0.3s; 
+}
+
+
+a[href="#top"]:hover {
+    transform: rotate(45deg);
 }
